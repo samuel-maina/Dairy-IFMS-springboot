@@ -1,0 +1,11 @@
+
+<configuration>
+    <appender name="JSON" class="ch.qos.logback.core.FileAppender">
+        <file>/home/samuel/loggers/debug.log</file>
+        <encoder>
+            <pattern>{"date":"%date{yyyy-MM-dd'T'HH:mm:ss.SSS}","uri":"%requestURL","status":"%statusCode","bytes":"%bytesSent","time": "%elapsedTime","requestbody":[%requestContent]}</pattern>
+        </encoder>
+    </appender>
+    <appender-ref ref="JSON"/>
+        
+</configuration>
