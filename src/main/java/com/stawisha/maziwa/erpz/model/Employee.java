@@ -161,6 +161,12 @@ public class Employee {
         this.locked = locked;
     }
 
+    @Override
+    public String toString() {
+        return "Employee{" + "Id=" + Id + ", firstName=" + firstName + ", secondName=" + secondName + ", phone=" + phone + ", identityNo=" + identityNo + ", email=" + email + ", tenant=" + tenant + '}';
+    }
+
+    
    
     
     
